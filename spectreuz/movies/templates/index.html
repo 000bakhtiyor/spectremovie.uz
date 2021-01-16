@@ -1,9 +1,19 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Test</title>
+	<title>SpectreMovie.uz</title>
+	
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+	<!--- Font font-awesome dan foydalanish uchun --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-    <h1>Test</h1>
+
+   {% include 'nav.html' %}
+
 </body>
 </html>
