@@ -4,7 +4,85 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Potta One', cursive;
+}
+
+
+footer {
+    
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-top: 3px;
+    padding: 10px;
+	background-color: lightgreen;
+}
+
+footer > .footer-social-icon {
+
+
+    padding: 10px;
+}
+
+footer > .footer-social-icon > ul {
+
+	display: flex;
+	list-style: none;
+
+}
+
+footer > .footer-social-icon > ul > li {
+
+	margin-right: 30%;
+	font-size: 40px;
+
+}
+
+footer > .footer-social-icon > ul > li > a {
+
+	color: white;
+}
+
+footer > .footer-social-icon > ul > li > a > i {
+
+    
+    padding: 10px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+footer > .footer-social-icon > ul > li > a > i:hover {
+
+	color: #1DB954;
+}
+
+footer > .footer-menu > ul {
+
+	list-style: none;
+	display: flex;
+
+}
+
+footer > .footer-menu > ul > li > a {
+
+	text-decoration: none;
+	padding: 5px 20px;
+	color: white;
+	border: 3px solid lightgreen;
+}
+
+footer > .footer-menu > ul > li > a:hover {
+
 	
+	border: 3px solid white;
+	border-radius: 5px;
+}
+
+footer > .footer-menu > ul > li {
+
+	align-items: center;
 }
 
 .nav {
@@ -52,7 +130,8 @@
     display: flex;
 	text-decoration: none;
 	margin: 0px;
-	padding: 0px 20px;
+	padding: 5px 20px;
+	border: 3px solid lightgreen;
 }
 
 .search {
@@ -62,17 +141,19 @@
 }
 .search > button {
 
-	background-color: white;
-	padding: 10px;
-	font-size: 15px;
-	border: none;
+	background-color: lightgreen;
+	padding: 4px;
+	width: 80px;
+	color: white;
+	font-size: 20px;
+	border: 3px solid lightgreen;
 	outline: none;
 	border-radius: 10px; 
 }
 
 .search > button:hover {
 
-	background-color: lightgrey;
+    border-color: white;
 }
 
 .search > input {
@@ -87,5 +168,6 @@
 
 .nav > ul > li > a:hover {
 
-	color: lightgrey;
+    border-radius: 5px;
+	border: 3px solid white;
 }
