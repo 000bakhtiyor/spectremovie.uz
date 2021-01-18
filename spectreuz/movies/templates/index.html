@@ -6,9 +6,13 @@
 	<title>SpectreMovie.uz</title>
 	
 	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/lightslider.css' %}">
 
 	<!--- Font font-awesome dan foydalanish uchun --->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="{% static 'js/JQuery3.3.1.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/lightslider.js' %}"></script>
 
 </head>
 <body>
@@ -17,17 +21,55 @@
   
     {% include 'slider.html' %}  
 
+    <section id="main">
+        
+        <h1 class="heading">Premyeralar</h1>
+
+            <ul id="autoWidth" class="cs-hidden">
+              {% for images in Premyera %}
+                  <li class="item-a">
+
+                      
+                            <div class="box">
+                                <img src="{{ images.premyera_image.url }}" />
+                            </div>
+
+                  </li>
+              {% endfor %}
+            </ul>
+
+      
+    </section>
+
+
+
+
+
     <div>
         {% for movie in Movies %}
         <video width="500" height="275" controls >
             <source src="{{ movie.movie.url }}" type="video/mp4">
-            <b>{{movie.caption}</b>
+            <b>{{ movie.caption }}</b>
         </video>
         {% endfor %}
     </div>
 
 
     {% include 'footer.html' %}
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+        $('#autoWidth').lightSlider({
+            autoWidth:true,
+            loop:true,
+            onSliderLoad: function() {
+                $('#autoWidth').removeClass('cS-hidden');
+            } 
+        });  
+      });
+
+        
+    </script>
 
    <script type="text/javascript" src="{% static 'js/slider.js' %}"></script>
 

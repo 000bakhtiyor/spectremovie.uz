@@ -21,4 +21,14 @@ class Movies(models.Model):
         verbose_name = 'movie'
         verbose_name_plural = 'movies'
     def __str__(self):
-        return self.caption       
+        return self.caption     
+
+
+class Premyera(models.Model):
+
+    premyera_caption = models.CharField(max_length=100)
+    premyera_image = models.ImageField(upload_to ='images/premyera/')  
+
+    def __str__(self):
+        
+        return str(self.id) + self.premyera_caption
