@@ -19,8 +19,7 @@
 
     <div>
         {% for movie in Movies %}
-        <h1> {{movie.caption}} </h1>
-        <video width="500" height="500" controls >
+        <video width="500" height="275" controls >
             <source src="{{ movie.movie.url }}" type="video/mp4">
             <b>{{movie.caption}</b>
         </video>
