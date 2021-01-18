@@ -121,3 +121,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# URL that handles the media served from MEDIA_ROOT. Make sure to use a
+# trailing slash.
+# Examples: "http://example.com/media/", "http://media.example.com/"
+MEDIA_URL = '/media/'
