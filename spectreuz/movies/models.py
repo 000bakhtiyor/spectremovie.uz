@@ -11,3 +11,12 @@ class Slider(models.Model):
     def __str__(self):
         
         return str(self.id) + self.slider_title
+
+
+
+class Movies(models.Model):
+    caption = models.CharField(max_length=100)
+    movie = models.FileField(upload_to="videos/") 
+
+    def __str__(self):
+        return self.caption       
