@@ -13,11 +13,22 @@
 </head>
 <body>
 
-   {% include 'nav.html' %}
+    {% include 'nav.html' %}
   
-   {% include 'slider.html' %}
+    {% include 'slider.html' %}  
 
-   {% include 'footer.html' %}
+    <div>
+        {% for movie in Movies %}
+        <h1> {{movie.caption}} </h1>
+        <video width="500" height="500" controls >
+            <source src="{{ movie.movie.url }}" type="video/mp4">
+            <b>{{movie.caption}</b>
+        </video>
+        {% endfor %}
+    </div>
+
+
+    {% include 'footer.html' %}
 
    <script type="text/javascript" src="{% static 'js/slider.js' %}"></script>
 

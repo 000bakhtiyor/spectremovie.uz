@@ -17,6 +17,8 @@ class Slider(models.Model):
 class Movies(models.Model):
     caption = models.CharField(max_length=100)
     movie = models.FileField(upload_to="videos/") 
-
+    class Meta:
+        verbose_name = 'movie'
+        verbose_name_plural = 'movies'
     def __str__(self):
         return self.caption       
