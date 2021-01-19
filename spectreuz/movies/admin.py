@@ -6,3 +6,4 @@ from .models import *
 admin.site.register(Slider)
 admin.site.register(Movies)
 admin.site.register(Premyera)
+admin.site.register(PostsForMainMenu)
