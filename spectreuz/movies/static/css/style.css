@@ -36,6 +36,11 @@ nav {
 	
 }
 
+.logo > img {
+
+
+}
+
 nav > ul {
 
 	display: flex;
@@ -187,8 +192,12 @@ footer > .footer-menu > ul > li {
 
 #main {
 
-	padding-top: 80px;
+	padding-top: 10px;
 	background-color: #ffffff; 
+	text-align: center;
+	border-bottom: 1px solid grey;
+	border-radius: 10px;
+	padding-bottom: 10px; 
 }
 
 .box {
@@ -212,12 +221,17 @@ footer > .footer-menu > ul > li {
 .heading {
 
 	padding-left: 30px;
-	padding-bottom: 20px; 
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 10px; 
 	font-weight: 500;
-	letter-spacing: 1px;
+	letter-spacing: 3px;
 	text-transform: uppercase;
-	font-size: 1.2rem;
+	font-size: 1.8rem;
 	color: #1a1a1a;
+	border-top: 1px solid grey;
+	
+	border-radius: 10px;
 }
 
 .cs-hidden {
@@ -225,3 +239,45 @@ footer > .footer-menu > ul > li {
 	overflow: visible !important;
 }
 
+.video-section {
+
+	background-color: #242424;
+	margin: 10px 3px;
+	padding: 3px 3px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	box-shadow: 5px 15px 30px rgba(0,0,0,0.5);
+
+}
+
+.video-body {
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px;
+}
+.video-section > video {
+
+	width: 50%;
+	height: 50%;
+}
+.video-section > h1 {
+
+	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 10px; 
+	font-weight: 500;
+	text-align: center;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	color: #ffffff;
+}
+.video-section-caption {
+
+    float: right;
+	margin: 10px;
+	color: #ffffff;
+}

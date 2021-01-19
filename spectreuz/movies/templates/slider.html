@@ -1,22 +1,25 @@
 {% load static %}
 
 
-<div class="slideshow-container">
+<div class="slider-frames">
 
-  {% for slide in Slider %}
+	<div class="slide-images">
 
-        <div class="mySlides fade" id="autoplay">
-          <div class="numbertext">{{ slide.id }} / 3</div>
-          <img src="{{ slide.slider_image.url }}" style="width:100%; height: 620px;">
-          <div class="text">{{ slide.caption }}</div>
-        </div>
+	  {% for slide in Slider %}
 
-  {% endfor %}
+	        <div class="mySlides-container" >
+		          
+		            <img src="{{ slide.slider_image.url }}" style="width:100%; height: 620px;">
+		         
+	        </div>
 
-  
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	  {% endfor %}
+  </div>
 
 </div>
+
+
+
+
 
 

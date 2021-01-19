@@ -3,16 +3,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>SpectreMovie.uz</title>
 	
 	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/lightslider.css' %}">
+    
 
 	<!--- Font font-awesome dan foydalanish uchun --->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script type="text/javascript" src="{% static 'js/JQuery3.3.1.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/lightslider.js' %}"></script>
+    
 
 </head>
 <body>
@@ -45,17 +50,30 @@
 
 
 
-    <div>
+    <div class="video-section">
         {% for movie in Movies %}
-        <video width="500" height="275" controls >
+        <h1>Yangi Kino Trilleri</h1>
+        <div class="video-body">
+            <video width="500" height="275" controls >
             <source src="{{ movie.movie.url }}" type="video/mp4">
             <b>{{ movie.caption }}</b>
         </video>
+        <div class="video-section-caption">
+            <h2>Kino Haqida</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        </div>
+        
         {% endfor %}
     </div>
 
 
+
+
     {% include 'footer.html' %}
+
+
+
 
     <script type="text/javascript">
         $(document).ready(function() {
@@ -72,6 +90,8 @@
     </script>
 
    <script type="text/javascript" src="{% static 'js/slider.js' %}"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
