@@ -48,3 +48,17 @@ class Premyera(models.Model):
     def __str__(self):
         
         return str(self.id) + self.premyera_caption
+
+
+class PostsForMainMenu(models.Model):
+    
+    post_title = models.CharField(max_length=40)
+    post_author = models.CharField(max_length=50)
+    post_date = models.DateTimeField(auto_now_add=True, blank=True)
+    post_description = models.TextField()
+    post_full_description = models.TextField()
+    post_image = models.ImageField(upload_to ='images/postsformainmenu/')
+
+    def __str__(self):
+
+        return self.post_title + " | " + self.post_author
