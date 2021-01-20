@@ -15,9 +15,11 @@ def home(request):
     }
 
 
-    return render(request, 'index.html', context)
+    return render(request, 'movies/index.html', context)
+    
 
 class MovieListView(ListView):
     model = Movies
-    context_object_name = 'movie'
-
+    template_name = 'movies/movies.html'   
+    context_object_name="movies" 
+      
