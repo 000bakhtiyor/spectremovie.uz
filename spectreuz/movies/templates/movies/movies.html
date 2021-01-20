@@ -24,12 +24,11 @@
 
     {% include 'movies/nav.html' %}
     
-
-
-
-
-
-
+    {% for movie in movies %}
+        {% if movie.genre == "Action" %}
+            <div><h1>Worked</h1></div>
+        {% endif %}
+    {% endfor %}
 
     {% include 'movies/footer.html' %}
 
