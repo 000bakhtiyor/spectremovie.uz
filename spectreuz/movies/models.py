@@ -6,7 +6,7 @@ class Slider(models.Model):
 
     slider_title = models.CharField(max_length=100)
     caption = models.TextField()
-    slider_image = models.ImageField(upload_to ='images/')
+    slider_image = models.ImageField(upload_to="images/", blank=True)
 
     def __str__(self):
         
@@ -17,6 +17,7 @@ class Slider(models.Model):
 class Movies(models.Model):
     caption = models.CharField(max_length=100)
     movie = models.FileField(upload_to="videos/") 
+    details = models.TextField(blank=True)
     class Meta:
         verbose_name = 'movie'
         verbose_name_plural = 'movies'
