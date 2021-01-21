@@ -462,3 +462,8 @@ footer > .footer-menu > ul > li {
   clear: both;
 }
 
+
+/* Movies*/
+.movies-row{
+	display: flex;
+}
