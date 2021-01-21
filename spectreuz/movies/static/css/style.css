@@ -466,4 +466,9 @@ footer > .footer-menu > ul > li {
 /* Movies*/
 .movies-row{
 	display: flex;
+	flex-direction: column;
+}
+
+.movies-row-card > img{
+	width: 200px;
 }

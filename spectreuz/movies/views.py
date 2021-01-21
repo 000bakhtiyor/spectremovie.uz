@@ -23,4 +23,6 @@ class MovieListView(ListView):
     model = Movies
     template_name = 'movies/movies.html'   
     context_object_name="movies" 
+
+
       

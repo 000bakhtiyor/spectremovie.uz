@@ -36,6 +36,7 @@ class Movies(models.Model):
     class Meta:
         verbose_name = 'movie'
         verbose_name_plural = 'movies'
+        
     def __str__(self):
         return self.caption     
 
