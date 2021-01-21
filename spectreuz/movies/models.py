@@ -31,6 +31,7 @@ class Movies(models.Model):
     movie = models.FileField(upload_to="videos/") 
     details = models.TextField(blank=True)
     genre = models.CharField(max_length=20, choices=genre_choices, default="1")
+    poster = models.ImageField(upload_to="images/poster/")
 
 
     class Meta:

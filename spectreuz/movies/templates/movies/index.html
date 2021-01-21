@@ -22,16 +22,12 @@
 </head>
 <body>
 
-<<<<<<< HEAD:spectreuz/movies/templates/movies/index.html
-    {% include 'movies/nav.html' %}
-=======
         <div class="alert">
           <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
           <strong>Diqqat!</strong> Saytimiz hozirda test rejimida ishlamoqda ,Agarda xato va kamchiliklar uchrab qolsa iltimos adminlarda xabar qiling. Buning uchun <a href="#">Aloqa Uchun</a> bo'limiga kiring.
         </div>
 
-    {% include 'nav.html' %}
->>>>>>> 96dc663dc6699070b98a0258a591757c81b2c436:spectreuz/movies/templates/index.html
+    {% include 'movies/nav.html' %}
   
     {% include 'movies/slider.html' %}  
 
@@ -76,7 +72,7 @@
         {% endfor %}
     </div>
 
-    {% include 'post.html' %}
+    {% include 'movies/post.html' %}
 
 
 

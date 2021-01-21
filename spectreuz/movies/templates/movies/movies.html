@@ -23,12 +23,34 @@
 <body>
 
     {% include 'movies/nav.html' %}
+    <div style="margin-top: 100px;"></div>
+
+    <div class="container">
+        <h2>Action Movies</h2>
+        <div class="d-flex flex-row">
+            <div class="p-2">Flex item 1</div>
+            <div class="p-2">Flex item 2</div>
+            <div class="p-2">Flex item 3</div>
+        </div>
+    </div>
     
+ 
+
+
+
+
+
+
+ <!--
     {% for movie in movies %}
-        {% if movie.genre == "Action" %}
-            <div><h1>Worked</h1></div>
+        {% if movie.genre == "1" %}
+            <div class="container">
+                <h1>Worked</h1>
+            </div>
+
         {% endif %}
     {% endfor %}
+-->    
 
     {% include 'movies/footer.html' %}
 
