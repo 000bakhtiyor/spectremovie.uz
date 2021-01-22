@@ -63,3 +63,10 @@ class PostsForMainMenu(models.Model):
     def __str__(self):
 
         return self.post_title + " | " + self.post_author
+
+class CardsForTrailer(models.Model):        
+    card_caption = models.CharField(max_length=200)
+    card_image = models.ImageField(upload_to='images/imagesforcards/')
+
+    def __str__(self):
+        return self.card_caption
