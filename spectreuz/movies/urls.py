@@ -11,5 +11,6 @@ urlpatterns = [
 
     path('', views.home, name='movies-index'),
     path('movies', MovieListView.as_view(), name="movies-page"),
+    path('treller', views.treller, name="trellers-page")
 
 ]

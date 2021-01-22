@@ -25,4 +25,5 @@ class MovieListView(ListView):
     context_object_name="movies" 
 
 
-      
+def treller(request):
+    return render(request, 'movies/treller.html')

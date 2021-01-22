@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>SpectreMovie.uz</title>
+	
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/lightslider.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style-treller-animation.css' %}">
+    
+
+	<!--- Font font-awesome dan foydalanish uchun --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   
+    <script type="text/javascript" src="{% static 'js/JQuery3.3.1.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/lightslider.js' %}"></script>
+    
+
+</head>
+<body>
+
+    {% include 'movies/nav.html' %}
+    <div style="margin-top: 100px;"></div>
+
+    <!-- Animatsiya -->
+    {% include 'movies/treller-animation.html' %}
+
+
+   
+
+
+    {% include 'movies/footer.html' %}
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+        $('#autoWidth').lightSlider({
+            autoWidth:true,
+            loop:true,
+            onSliderLoad: function() {
+                $('#autoWidth').removeClass('cS-hidden');
+            } 
+        });  
+      });
+
+        
+    </script>
+
+   <script type="text/javascript" src="{% static 'js/slider.js' %}"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+
+
+
+
+<!--- Animatsiya uchun --->
+
+
+
+
+</body>
+</html>
