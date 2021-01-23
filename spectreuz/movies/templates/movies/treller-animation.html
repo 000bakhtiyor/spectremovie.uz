@@ -1,31 +1,245 @@
+<div class="wrapper">
 
-<main class="page-content">
-  <div class="card">
-    <div class="content">
-      <h2 class="title">Mountain View</h2>
-      <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p>
-      <a href="{% url 'movies-page' %}"><button class="btn">Book Now</button></a>
-    </div>
+  <h2><strong>Barcha Trellerlar</strong></h2>
+
+  <div class="cards">
+
+    <figure class="card">
+
+      <img src="https://mrreiha.keybase.pub/codepen/hover-fx/4.jpg" />
+
+      <figcaption><a href="#" style="color: white;">KoseBoz!</a></figcaption>
+
+    </figure>
+
+    <figure class="card">
+
+      <img src="https://mrreiha.keybase.pub/codepen/hover-fx/4.jpg" />
+
+      <figcaption><a href="#" style="color: white;">KoseBoz!</a></figcaption>
+
+    </figure>
+    <figure class="card">
+
+      <img src="https://mrreiha.keybase.pub/codepen/hover-fx/4.jpg" />
+
+      <figcaption><a href="#" style="color: white;">KoseBoz!</a></figcaption>
+
+    </figure>
+    <figure class="card">
+
+      <img src="https://mrreiha.keybase.pub/codepen/hover-fx/4.jpg" />
+
+      <figcaption><a href="#" style="color: white;">KoseBoz!</a></figcaption>
+
+    </figure>
+    <figure class="card">
+
+      <img src="https://mrreiha.keybase.pub/codepen/hover-fx/4.jpg" />
+
+      <figcaption><a href="#" style="color: white;">KoseBoz!</a></figcaption>
+
+    </figure>
+    <figure class="card">
+
+      <img src="https://mrreiha.keybase.pub/codepen/hover-fx/4.jpg" />
+
+      <figcaption><a href="#" style="color: white;">KoseBoz!</a></figcaption>
+
+    </figure>
+    <figure class="card">
+
+      <img src="https://mrreiha.keybase.pub/codepen/hover-fx/4.jpg" />
+
+      <figcaption><a href="#" style="color: white;">KoseBoz!</a></figcaption>
+
+    </figure>
+    <figure class="card">
+
+      <img src="https://mrreiha.keybase.pub/codepen/hover-fx/4.jpg" />
+
+      <figcaption><a href="#" style="color: white;">KoseBoz!</a></figcaption>
+
+    </figure>
+    <figure class="card">
+
+      <img src="https://mrreiha.keybase.pub/codepen/hover-fx/4.jpg" />
+
+      <figcaption><a href="#" style="color: white;">KoseBoz!</a></figcaption>
+
+    </figure>
+    <figure class="card">
+
+      <img src="https://mrreiha.keybase.pub/codepen/hover-fx/4.jpg" />
+
+      <figcaption><a href="#" style="color: white;">KoseBoz!</a></figcaption>
+
+    </figure>
+
+
   </div>
-  <div class="card">
-    <div class="content">
-      <h2 class="title">To The Beach</h2>
-      <p class="copy">Plan your next beach trip with these fabulous destinations</p>
-      <a href="{% url 'movies-page' %}"><button class="btn">Book Now</button></a>
-    </div>
-  </div>
-  <div class="card">
-    <div class="content">
-      <h2 class="title">Desert Destinations</h2>
-      <p class="copy">It's the desert you've always dreamed of</p>
-      <a href="{% url 'movies-page' %}"><button class="btn">Book Now</button></a>
-    </div>
-  </div>
-  <div class="card">
-    <div class="content">
-      <h2 class="title">Explore The Galaxy</h2>
-      <p class="copy">Seriously, straight up, just blast off into outer space today</p>
-      <a href="{% url 'movies-page' %}"><button class="btn">Book Now</button></a>
-    </div>
-  </div>
-</main>
+
+
+  
+
+<style type="text/css">
+  .abs,
+h2:after,
+.cards .card figcaption,
+.cards .card:after,
+.news .card figcaption,
+.news .card:after,
+.news .article figcaption {
+  position: absolute;
+}
+.rel,
+h2,
+h2 strong,
+.cards .card,
+.news .card,
+.news .article {
+  position: relative;
+}
+.fix {
+  position: fixed;
+}
+.dfix {
+  display: inline;
+}
+.dib {
+  display: inline-block;
+}
+.db {
+  display: block;
+}
+.dn {
+  display: none;
+}
+.df,
+.cards,
+.news {
+  display: flex;
+}
+.dif {
+  display: inline-flex;
+}
+.dg {
+  display: grid;
+}
+.dig {
+  display: inline-grid;
+}
+.vm,
+h2,
+h2 strong,
+h2 span {
+  vertical-align: middle;
+}
+body {
+  background: #24282f;
+  font-family: 'Alegreya Sans';
+}
+.wrapper {
+  padding: 15px;
+}
+h2 {
+  padding: 10px;
+  padding-left: 25px;
+  color: #ccc;
+  margin: 0;
+}
+h2 strong {
+  z-index: 2;
+  background: #24282f;
+  padding: 4px 8px;
+}
+h2 span {
+  font-size: 0.7em;
+  color: #aaa;
+  margin-left: 10px;
+}
+h2:after {
+  content: '';
+  z-index: 1;
+  bottom: 50%;
+  margin-bottom: -2px;
+  height: 2px;
+  left: 0;
+  right: 0;
+  background: #373d47;
+}
+.cards {
+  flex-flow: row wrap;
+}
+.cards .card,
+.card {
+  margin: 20px;
+  width: 180px;
+  height: 270px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.8);
+  transform-origin: center top;
+  transform-style: preserve-3d;
+  transform: translateZ(0);
+  transition: 0.3s;
+}
+.cards .card img,
+.card img {
+  width: 100%;
+  min-height: 100%;
+}
+.cards .card figcaption,
+.card figcaption {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  padding-bottom: 10px;
+  font-size: 20px;
+  background: none;
+  color: #fff;
+  transform: translateY(100%);
+  transition: 0.3s;
+}
+.cards .card:after,
+.card:after {
+  content: '';
+  z-index: 10;
+  width: 200%;
+  height: 100%;
+  top: -90%;
+  left: -20px;
+  opacity: 0.1;
+  transform: rotate(45deg);
+  background: linear-gradient(to top, transparent, #fff 15%, rgba(255,255,255,0.5));
+  transition: 0.3s;
+}
+.cards .card:hover,
+.card:hover,
+.cards .card:focus,
+.card:focus,
+.cards .card:active,
+.card:active {
+  box-shadow: 0 8px 16px 3px rgba(0,0,0,0.6);
+  transform: translateY(-3px) scale(1.05) rotateX(15deg);
+}
+.cards .card:hover figcaption,
+.card:hover figcaption,
+.cards .card:focus figcaption,
+.card:focus figcaption,
+.cards .card:active figcaption,
+.card:active figcaption {
+  transform: none;
+}
+.cards .card:hover:after,
+.card:hover:after,
+.card:focus:after,
+.card:focus:after,
+.cards .card:active:after,
+.card:active:after {
+  transform: rotate(25deg);
+  top: -40%;
+  opacity: 0.15;
+}
+
+</style>
