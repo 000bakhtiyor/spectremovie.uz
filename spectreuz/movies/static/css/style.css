@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Fraunces', serif;
+	font-family: 'Noto Sans JP', 'sans-serif';
 }
 
 li {
@@ -464,11 +464,72 @@ footer > .footer-menu > ul > li {
 
 
 /* Movies*/
-.movies-row{
+
+
+
+
+
+#movie-div{
+	font-family: 'Noto Sans JP', 'sans-serif';
+	padding: 0px 15px 300px 15px;
+	background-color: #eeeeee;
+}
+.movies-cards{
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-.movies-row-card > img{
-	width: 200px;
+.movies-card{
+	background-color: cyan;
+	border-radius: 3px;
+	width: 220px;
 }
+.movies-card>img{
+	width: 100%;
+	height: 300px;
+	border-radius: 3px;
+	opacity: 0.9;
+}
+.movies-card .details{
+	padding: 0px 6px;
+}
+.movies-card .buttons{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.movies-card .buttons button{
+	width: 100%;
+	font-size: ;
+	margin: 2px 5px;
+	padding: 8px 15px;
+	font-size: 14px;
+	font-weight: 1000;
+	border: 1px solid #585858;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.movies-card .buttons button:first-child{
+	color: white;
+	background: #585858;
+}
+.movies-card .buttons button:first-child:hover{
+	color: #585858;
+	background: white;
+}
+.movies-card .buttons button:last-child{
+	color: #585858;
+	background: white;
+}
+
+.movies-card .buttons button:last-child:hover{
+	color: white;
+	background: #585858;
+}
+
+
+
