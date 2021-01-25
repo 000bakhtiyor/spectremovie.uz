@@ -484,16 +484,37 @@ footer > .footer-menu > ul > li {
 	background-color: cyan;
 	border-radius: 3px;
 	width: 220px;
+	position: relative;
+	overflow: hidden;
 }
 .movies-card>img{
 	width: 100%;
-	height: 300px;
+	height: 100%;
 	border-radius: 3px;
 	opacity: 0.9;
 }
+.movies-card:hover img{
+	transform: scale(1.1);
+	transition: all 0.3s ease-out;
+}
+.movies-card .content{
+	position: absolute;
+	width: 100%;
+	bottom: -50%;
+	background-color: white;
+	transition: all 0.3s ease;
+}
+.movies-card:hover .content{
+	bottom: 0;
+}
+
 .movies-card .details{
 	padding: 0px 6px;
 }
+.movies-card .details span{
+	font-size: 22px;
+}
+
 .movies-card .buttons{
 	display: flex;
 	flex-direction: row;
@@ -501,7 +522,8 @@ footer > .footer-menu > ul > li {
 	margin-top: 20px;
 }
 
-.movies-card .buttons button{
+.movies-card .buttons a{
+	text-align: center;
 	width: 100%;
 	font-size: ;
 	margin: 2px 5px;
@@ -513,20 +535,20 @@ footer > .footer-menu > ul > li {
 	cursor: pointer;
 	transition: all 0.3s ease;
 }
-.movies-card .buttons button:first-child{
+.movies-card .buttons a:first-child{
 	color: white;
 	background: #585858;
 }
-.movies-card .buttons button:first-child:hover{
+.movies-card .buttons a:first-child:hover{
 	color: #585858;
 	background: white;
 }
-.movies-card .buttons button:last-child{
+.movies-card .buttons a:last-child{
 	color: #585858;
 	background: white;
 }
 
-.movies-card .buttons button:last-child:hover{
+.movies-card .buttons a:last-child:hover{
 	color: white;
 	background: #585858;
 }
