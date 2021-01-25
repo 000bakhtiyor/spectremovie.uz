@@ -483,7 +483,8 @@ footer > .footer-menu > ul > li {
 .movies-card{
 	background-color: cyan;
 	border-radius: 3px;
-	width: 220px;
+	width: 200px;
+	height: 300px;
 	position: relative;
 	overflow: hidden;
 }
