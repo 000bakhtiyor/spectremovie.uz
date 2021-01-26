@@ -21,80 +21,19 @@
 
 </head>
 <body>
+    
 
-        <div class="alert">
-          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-          <strong>Diqqat!</strong> Saytimiz hozirda test rejimida ishlamoqda ,Agarda xato va kamchiliklar uchrab qolsa iltimos adminlarda xabar qiling. Buning uchun <a href="#">Aloqa Uchun</a> bo'limiga kiring.
-        </div>
+<video autoplay muted loop id="myVideo">
+  <source src="media/mainmenuvideo/rain.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
 
-    {% include 'movies/nav.html' %}
+<div class="content">
+  <h1>SpectreMovie</h1>
   
-    {% include 'movies/slider.html' %}  
+  <a href="{% url 'movies-page' %}"><i class="fa fa-play"></i></a>
+</div>
 
-    <section id="main">
-        
-        <h1 class="heading">Premyeralar</h1>
-
-            <ul id="autoWidth" class="cs-hidden">
-              {% for images in Premyera %}
-                  <li class="item-a">
-
-                      
-                            <div class="box">
-                                <img src="{{ images.premyera_image.url }}" />
-                            </div>
-
-                  </li>
-              {% endfor %}
-            </ul>
-
-      
-    </section>
-
-
-
-
-
-    <div class="video-section">
-        {% for movie in Movies %}
-        <h1>Yangi Kino Trilleri</h1>
-        <div class="video-body">
-            <video width="500" height="275" controls >
-            <source src="{{ movie.movie.url }}" type="video/mp4">
-            <b>{{ movie.caption }}</b>
-        </video>
-        <div class="video-section-caption">
-            <h2>Kino Haqida</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-        </div>
-        
-        {% endfor %}
-    </div>
-
-    {% include 'movies/post.html' %}
-
-
-
-
-    {% include 'movies/footer.html' %}
-
-
-
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-        $('#autoWidth').lightSlider({
-            autoWidth:true,
-            loop:true,
-            onSliderLoad: function() {
-                $('#autoWidth').removeClass('cS-hidden');
-            } 
-        });  
-      });
-
-        
-    </script>
 
    <script type="text/javascript" src="{% static 'js/slider.js' %}"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
