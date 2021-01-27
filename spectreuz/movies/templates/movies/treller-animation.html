@@ -1,85 +1,49 @@
 {% load static %}
 
-
-<link rel="stylesheet" type="text/css" href="{% static 'css/style-treller-animation.css' %}">
-
-<div class="wrapper">
-
-  <h2><strong>Barcha Trellerlar</strong></h2>
-
-  <div class="cards">
-
-    <figure class="card">
-
-      <img src="media/images/treller/treller-1.jpg" />
-
-      <figcaption><a href="#"><button class="btn draw-border" type="button"><strong>KoseBoz!</strong></button></a></figcaption>
-
-    </figure>
-
-    <figure class="card">
-
-      <img src="media/images/treller/treller-2.jpg" />
-
-      <figcaption><a href="#"><button class="btn draw-border" type="button"><strong>KoseBoz!</strong></button></a></figcaption>
-
-    </figure>
-    <figure class="card">
-
-      <img src="media/images/treller/treller-3.jpg" />
-
-      <figcaption><a href="#"><button class="btn draw-border" type="button"><strong>KoseBoz!</strong></button></a></figcaption>
-
-    </figure>
-    <figure class="card">
-
-      <img src="media/images/treller/treller-4.jpg" />
-
-      <figcaption><a href="#"><button class="btn draw-border" type="button"><strong>KoseBoz!</strong></button></a></figcaption>
-
-    </figure>
-    <figure class="card">
-
-      <img src="media/images/treller/treller-5.jpg" />
-
-      <figcaption><a href="#"><button class="btn draw-border" type="button"><strong>KoseBoz!</strong></button></a></figcaption>
-
-    </figure>
-    <figure class="card">
-
-      <img src="media/images/treller/treller-6.jpg" />
-
-      <figcaption><a href="#"><button class="btn draw-border" type="button"><strong>KoseBoz!</strong></button></a></figcaption>
-
-    </figure>
-    <figure class="card">
-
-      <img src="media/images/treller/treller-7.jpg" />
-
-      <figcaption><a href="#"><button class="btn draw-border" type="button"><strong>KoseBoz!</strong></button></a></figcaption>
-
-    </figure>
-    <figure class="card">
-
-      <img src="media/images/treller/treller-8.jpg" />
-
-      <figcaption><a href="#"><button class="btn draw-border" type="button"><strong>KoseBoz!</strong></button></a></figcaption>
-
-    </figure>
-    <figure class="card">
-
-      <img src="media/images/treller/treller-9.jpg" />
-
-      <figcaption><a href="#"><button class="btn draw-border" type="button"><strong>KoseBoz!</strong></button></a></figcaption>
-
-    </figure>
-    <figure class="card">
-
-      <img src="media/images/treller/treller-10.jpg" />
-
-      <figcaption><a href="#"><button class="btn draw-border" type="button"><strong>KoseBoz!</strong></button></a></figcaption>
-
-    </figure>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style-treller-animation.css' %}">
+  <title></title>
+</head>
+<body>
 
 
+<center>
+<div style="width: 45%; align-items: center;">
+  <div class="banner">
+    <div class="content-treller">
+    <center><img src="media/images/treller-1.jpg" class="img"></center>
+    <br>
+    <h2>Godzilla vs Kong</h2>
+    <p>Insoniyat Godzilla va Kongning teng bo'lmagan jangda birlashishga majbur bo'lishida aybdor. Yer yuzidagi yirtqich hayvonlarning hayotini kuzatib boradigan Monarx tashkiloti titanlarning kelib chiqishi sirini ochib berishga umid qilib, Boshsuyagi orolining ajralmagan erlariga ekspeditsiya yuboradi. Ammo, "Monarx" dan tashqari, yaxshi va yomonni ham yo'q qilishni rejalashtirgan boshqa odamlar ham bor.</p>
+    <center><a style="cursor: pointer;" onclick="toggle();">Watch treller</a></center>
+
+    </div>
   </div>
+
+  <div class="treller">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/odM92ap8_c0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <img src="media/images/close.jpg" class="close" onclick="toggle();">
+  </div>
+</div>
+</center>
+
+  <script type="text/javascript">
+    function toggle() {
+      var treller = document.querySelector(".treller")
+
+      var vidio = document.querySelector("vidio")
+
+      treller.classList.toggle("active")
+      vidio.pause();
+      vidio.currentTime = 0;
+    }
+  </script>
+
+
+</body>
+</html>
