@@ -16,7 +16,7 @@ a {
 	text-decoration: none;
 }
 
-video {
+#myVideo {
 
 	width: 100%;
 	height: auto;
@@ -30,7 +30,7 @@ video {
   min-height: 100%;
 }
 
-.content {
+.cool-content {
   position: fixed;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
@@ -41,34 +41,53 @@ video {
   justify-content: center;
   align-items: center;
 }
-.content > h1 {
+.cool-content > h1 {
 
     padding: 50px;
 	font-size: 40px;
 	font-weight: bold;
+	text-transform: uppercase;
+	font-family: 'Rubik', sans-serif;
+	position: relative;
+	background: linear-gradient(to right, #24243e, #141E30, #0f0c29);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
-.content > a {
+.cool-content > h1:before {
+z-index: -1;
+text-shadow: -0.001em -0.001em 1px rgba(255,255,255,.15)}
+
+.cool-content > h1:after {
+z-index: -2;
+text-shadow: 10px 10px 10px rgba(0,0,0,.5), 20px 20px 20px rgba(0,0,0,.4), 30px 30px 30px rgba(0,0,0,.1);
+mix-blend-mode: multiply; }
+
+.cool-content > a {
 
 	border: 0.5px solid ;
 	border-radius: 5px 20px 5px;
 	text-decoration: none;
 	transition: 0.8s;
+	color: red;
+	
 }
 
-.content > a:hover {
+.cool-content > a > i {
 
-	color: white;
-	border-color: #3498db;
-	background-color: #3498db;
-	box-shadow: 5px 10px 10px rgba(255,255,255,0.5);
-}
-
-.content > a > i {
-
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
     font-size: 40px;
     padding: 15px 45px;
 }
+.cool-content > a > i:hover {
+	
+	color: #8B0000;
+	-webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+
 
 nav {
 
