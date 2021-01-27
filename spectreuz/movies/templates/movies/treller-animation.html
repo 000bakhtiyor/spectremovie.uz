@@ -11,28 +11,68 @@
 <body>
 
 
-<center>
-<div style="width: 45%; align-items: center;">
-  <div class="banner">
-    <div class="content-treller">
-    <center><img src="media/images/treller-1.jpg" class="img"></center>
-    <br>
-    <h2>Godzilla vs Kong</h2>
-    <p>Insoniyat Godzilla va Kongning teng bo'lmagan jangda birlashishga majbur bo'lishida aybdor. Yer yuzidagi yirtqich hayvonlarning hayotini kuzatib boradigan Monarx tashkiloti titanlarning kelib chiqishi sirini ochib berishga umid qilib, Boshsuyagi orolining ajralmagan erlariga ekspeditsiya yuboradi. Ammo, "Monarx" dan tashqari, yaxshi va yomonni ham yo'q qilishni rejalashtirgan boshqa odamlar ham bor.</p>
-    <center><a style="cursor: pointer;" onclick="toggle();">Watch treller</a></center>
+<div id="movie-card-list">
+  <div class="movie-card" data-movie="Godzilla vs Kong">
+    <div class="movie-card__overlay"></div>
+    <div class="movie-card__content">
+      <div class="movie-card__header">
+        <h1 class="movie-card__title">Godzilla vs Kong</h1>
+        <h4 class="movie-card__info">2021 31-Mart</h4>
+      </div>
+      <p class="movie-card__desc">bir nimalar , taxminan 3-qator</p>
+      <button class="btn btn-outline" type="button" onclick="toggle()">Watch Trailer</button>
+      <div class="treller">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/odM92ap8_c0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+    <img src="media/images/treller/close.jpg" class="close" onclick="toggle();">
+  </div>
     </div>
   </div>
 
-  <div class="treller">
+
+  <div class="movie-card" data-movie="Godzilla vs Kong">
+    <div class="movie-card__overlay"></div>
+    <div class="movie-card__content">
+      <div class="movie-card__header">
+        <h1 class="movie-card__title">Godzilla vs Kong</h1>
+        <h4 class="movie-card__info">2021 31-Mart</h4>
+      </div>
+      <p class="movie-card__desc">bir nimalar , taxminan 3-qator</p>
+      <button class="btn btn-outline" type="button" onclick="toggle()">Watch Trailer</button>
+      <div class="treller">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/odM92ap8_c0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    <img src="media/images/close.jpg" class="close" onclick="toggle();">
+    <img src="media/images/treller/close.jpg" class="close" onclick="toggle();">
   </div>
-</div>
-</center>
+    </div>
+  </div>
 
-  <script type="text/javascript">
+
+<div class="movie-card" data-movie="Godzilla vs Kong">
+    <div class="movie-card__overlay"></div>
+    <div class="movie-card__content">
+      <div class="movie-card__header">
+        <h1 class="movie-card__title">Godzilla vs Kong</h1>
+        <h4 class="movie-card__info">2021 31-Mart</h4>
+      </div>
+      <p class="movie-card__desc">bir nimalar , taxminan 3-qator</p>
+      <button class="btn btn-outline" type="button" onclick="toggle()">Watch Trailer</button>
+      <div class="treller">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/odM92ap8_c0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <img src="media/images/treller/close.jpg" class="close" onclick="toggle();">
+  </div>
+    </div>
+  </div>  
+
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
     function toggle() {
       var treller = document.querySelector(".treller")
 
