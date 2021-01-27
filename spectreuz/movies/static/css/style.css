@@ -553,32 +553,32 @@ footer > .footer-menu > ul > li {
 	transform: scale(1.1);
 	transition: all 0.3s ease-out;
 }
-.movies-card .content{
+.movies-card .card-content{
 	position: absolute;
 	width: 100%;
 	bottom: -50%;
 	background-color: white;
 	transition: all 0.3s ease;
 }
-.movies-card:hover .content{
+.movies-card:hover .card-content{
 	bottom: 0;
 }
 
-.movies-card .details{
+.movies-card .card-details{
 	padding: 0px 6px;
 }
-.movies-card .details span{
+.movies-card .card-details span{
 	font-size: 22px;
 }
 
-.movies-card .buttons{
+.movies-card .card-buttons{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	margin-top: 20px;
 }
 
-.movies-card .buttons a{
+.movies-card .card-buttons a{
 	text-align: center;
 	width: 100%;
 	font-size: ;
@@ -591,20 +591,20 @@ footer > .footer-menu > ul > li {
 	cursor: pointer;
 	transition: all 0.3s ease;
 }
-.movies-card .buttons a:first-child{
+.movies-card .card-buttons a:first-child{
 	color: white;
 	background: #585858;
 }
-.movies-card .buttons a:first-child:hover{
+.movies-card .card-buttons a:first-child:hover{
 	color: #585858;
 	background: white;
 }
-.movies-card .buttons a:last-child{
+.movies-card .card-buttons a:last-child{
 	color: #585858;
 	background: white;
 }
 
-.movies-card .buttons a:last-child:hover{
+.movies-card .card-buttons a:last-child:hover{
 	color: white;
 	background: #585858;
 }
