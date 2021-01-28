@@ -169,6 +169,12 @@ a {
 }
 
 
+
+
+
+
+
+
 nav {
 
     display: flex;
@@ -248,45 +254,60 @@ nav > ul > li > a:hover {
     transition: all ease 0.2s;
 }
 
+.navbarsicon {
 
+    display: none;
 
-
-
-
-.alert {
-  padding: 20px;
-  width: 100%;
-  background-color: #339900;
-  color: white;
-  margin-top: 80px;
-  position: fixed;
 }
 
-.alert > a {
-
-    color: white;
-    padding: 8px;
+@media screen and (max-width: 1096px){
+    
+    nav > ul > li > a {
+        
+        padding: 0px 10px;
+    }
 }
 
-.alert > a:hover {
+@media screen and (max-width: 972px){
+    
+    nav > ul {
+        
+        position: absolute;
+        right: 0;
+        height: 41.5vh;
+        top: 13vh;
+        box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.45);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 38%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        border: 1px solid grey;
+        border-top: none;
+    }
+    nav > ul > li:hover {
 
+    color: #ffffff;
     background-color: #242424;
+    width: 100%;
+    box-shadow: 5px 10px 30px rgba(53,53,53,0.1);
+    transition: all ease 0.2s;
+    }
+    .search {
+        display: none;
+    }
+    .navbarsicon {
+
+        display: block;
+        font-size: 30px;
+    }
+}
+.nav-active {
+    transform: translateX(0%);
 }
 
-.closebtn {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
 
-.closebtn:hover {
-  color: black;
-}
 
 
 
@@ -745,7 +766,7 @@ footer > .footer-menu > ul > li {
   text-align: center;
 }
 
-.aucontainer::after, .row::after {
+.aucontainer::after, .aurow::after {
   content: "";
   clear: both;
   display: table;
@@ -765,7 +786,8 @@ footer > .footer-menu > ul > li {
   text-align: center;
   cursor: pointer;
   background-color: #000;
-  width: 100%;
+  width: 70%;
+  border-radius: 3px;
 }
 
 .aubutton:hover {
