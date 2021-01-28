@@ -567,10 +567,10 @@ footer > .footer-menu > ul > li {
 	height: 100%;
 	border-radius: 3px;
 	opacity: 0.9;
+	transition: all 0.3s ease-out;
 }
 .movies-card:hover img{
 	transform: scale(1.1);
-	transition: all 0.3s ease-out;
 }
 .movies-card .card-content{
 	position: absolute;
