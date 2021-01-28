@@ -8,11 +8,7 @@ def home(request):
 
     context = {
 
-    "Slider"  : Slider.objects.all(),
     "Movies"  : Movies.objects.all(),
-    "Premyera": Premyera.objects.all(),
-    "PostsForMainMenu" : PostsForMainMenu.objects.all(),
-
     }
 
 

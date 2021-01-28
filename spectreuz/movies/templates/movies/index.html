@@ -23,16 +23,29 @@
 <body>
     
 
-<video autoplay loop id="myVideo">
-  <source src="media/mainmenuvideo/rain.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
+<section class="mmcontainer">
+    <div class="mmhead">
+        <img src="./media/images/rmlogo.png">
+        <a href="#">Premium Sahifa</a>
+    </div>
+</section>
+<section class="mmbanner">
+    <img src="./media/images/mmbg.jpg" class="fit">
+    <div class="mmbox">
+        <div class="mmheading">
+            <h2>Chegarasiz kinolar, TV Shoular va boshqalar.</h2>
+            <h5>Istalgan joyda , Qulay vaqtda.</h5>
+            <p>Tomoshaga tayyormisiz ? Emailgizni kiriting va yangiliklardan xabardor bo'ling.</p>
 
-<div class="cool-content">
-  <h1>SpectreMovie</h1>
-  
-  <a href="{% url 'movies-page' %}"><i class="fa fa-play"></i></a>
-</div>
+        </div>
+        <div class="mmsubcribe">
+            <input type="email" name="mmemail" placeholder="Email manzilini kiriting">
+            <a href="{% url 'movies-page' %}">Kino Olamiga O'tish > </a>
+        </div>
+    </div>
+</section>
+
+
 
 
    <script type="text/javascript" src="{% static 'js/slider.js' %}"></script>
