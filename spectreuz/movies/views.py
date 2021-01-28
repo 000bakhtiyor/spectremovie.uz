@@ -23,3 +23,8 @@ class MovieListView(ListView):
 
 def treller(request):
     return render(request, 'movies/treller.html')
+
+
+def aboutus(request):
+
+	return render(request, 'movies/about-us.html')

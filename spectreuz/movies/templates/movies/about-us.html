@@ -1,0 +1,77 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>SpectreMovie.uz</title>
+	
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/lightslider.css' %}">
+    
+
+	<!--- Font font-awesome dan foydalanish uchun --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   
+    <script type="text/javascript" src="{% static 'js/JQuery3.3.1.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/lightslider.js' %}"></script>
+    
+
+</head>
+<body>
+
+    {% include 'movies/nav.html' %}
+     
+      <div class="auabout-section">
+	  <h1>Sayt Haqida</h1>
+	  <p>Kino , Seriallar , Multifilmlar , TV Shoular Barchasi Bitta Saytda.</p>
+	  <p>SpectreMovie.Uz sayti sizga barcha yangiliklarni birinchilardan bo'lib taqdim etadi.</p>
+	</div>
+
+	<h2 style="text-align:center;margin: 10px 0px;">Bizning Jamoa</h2>
+	<div class="aurow">
+	  <div class="aucolumn">
+	    <div class="aucard">
+	      <img src="https://i1.wp.com/www.menstylefashion.com/wp-content/uploads/2017/11/MrQuintessential-MenStyleFashion-knitwear-1.jpg?resize=1200%2C640&ssl=1" alt="Jane" style="width:100%">
+	      <div class="aucontainer">
+	        <h2>MarkelOff</h2>
+	        <p class="autitle">CEO & Founder</p>
+	        <p>Sayt g'oyasi asoschisi va Developer.</p>
+	        <p>????????????@gmail.com</p>
+	        <p><button class="aubutton">Bog'lanish</button></p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="aucolumn">
+	    <div class="aucard">
+	      <img src="https://i1.wp.com/www.menstylefashion.com/wp-content/uploads/2017/11/MrQuintessential-MenStyleFashion-knitwear-1.jpg?resize=1200%2C640&ssl=1" alt="Mike" style="width:100%">
+	      <div class="aucontainer">
+	        <h2>ThatisJamshid</h2>
+	        <p class="autitle">Full Stack Developer</p>
+	        <p>Sayt yaratuchi va Sayt Admini.</p>
+	        <p>????????????@gmail.com</p>
+	        <p><button class="aubutton">Bog'lanish</button></p>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="aucolumn">
+	    <div class="aucard">
+	      <img src="https://i1.wp.com/www.menstylefashion.com/wp-content/uploads/2017/11/MrQuintessential-MenStyleFashion-knitwear-1.jpg?resize=1200%2C640&ssl=1" alt="John" style="width:100%">
+	      <div class="aucontainer">
+	        <h2>doniev</h2>
+	        <p class="autitle">Full Stack Developer</p>
+	        <p>Sayt yaratuchi va Sayt Admini.</p>
+	        <p>admin@doniyev.uz</p>
+	        <p><button class="aubutton">Bog'lanish</button></p>
+	      </div>
+	    </div>
+	  </div>
+	</div> 
+
+    {% include 'movies/footer.html' %}
+</body>
+</html>
