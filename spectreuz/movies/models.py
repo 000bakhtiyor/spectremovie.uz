@@ -19,7 +19,7 @@ class Movies(models.Model):
 
 
     caption = models.CharField(max_length=100)
-    movie = models.FileField(upload_to="videos/") 
+    movie = models.CharField(max_length=300) 
     details = models.TextField(blank=True)
     genre = models.CharField(max_length=20, choices=genre_choices, default="1")
     poster = models.ImageField(upload_to="posters/", default="/media/card.jfif")

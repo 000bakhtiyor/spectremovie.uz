@@ -8,18 +8,20 @@ def home(request):
 
     context = {
 
-    "Movies"  : Movies.objects.all(),
+    "Movies"  : Movies.objects.all()[0:5],
     }
 
 
     return render(request, 'movies/index.html', context)
     
 
-class MovieListView(ListView):
-    model = Movies
-    template_name = 'movies/movies.html'   
-    context_object_name="movies" 
 
+
+def movies(request):
+    context = {
+        "action_movies":Movies.objects.all()[Movies.objects.all().genre=="1"]
+    }
+    return render(request, "movies/movies.html", context)
 
 def treller(request):
     return render(request, 'movies/treller.html')
