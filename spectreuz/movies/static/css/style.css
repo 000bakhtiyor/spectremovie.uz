@@ -651,7 +651,7 @@ footer > .footer-menu > ul > li {
 }
 .movies-cards{
     display: flex;
-    flex-direction: card;
+    flex-direction: row;
     justify-content: space-between;
 }
 

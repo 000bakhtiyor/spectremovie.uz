@@ -19,7 +19,7 @@ def home(request):
 
 def movies(request):
     context = {
-        "action_movies":Movies.objects.all()[Movies.objects.all().genre=="1"]
+        "action_movies":Movies.objects.all().filter(genre="1")
     }
     return render(request, "movies/movies.html", context)
 
