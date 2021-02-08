@@ -27,12 +27,13 @@
     <div style="margin-top: 80px;"></div>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+ 
     
     <div id="movie-div">
       <div class="movies-card-container">
         <h2>Action</h2> 
-        {% for movie in action_movies %} 
         <div class="movies-cards">
+          {% for movie in action_movies %} 
           <div class="movies-card">
             <img src={{ movie.poster.url }}>
             <div class="card-content">
@@ -47,9 +48,10 @@
                 <a href="#">Play</a>
               </div>
             </div>
-          </div>                                                   
+          </div>   
+          {% endfor %}                                                
         </div>  
-        {% endfor %}
+        
       </div>   
     </div>
 
