@@ -30,8 +30,9 @@
  
     
     <div id="movie-div">
-      <div class="movies-card-container">
-        <h2>Action</h2> 
+      <div id="movies-card-container">
+        <h2 style="display: inline; margin-right: 10px;">Action</h2> 
+        <a href="#" class="card-more-link"> more>>>></a>
         <div class="movies-cards">
           {% for movie in action_movies %} 
           <div class="movies-card">
@@ -51,6 +52,90 @@
           </div>   
           {% endfor %}                                                
         </div>  
+        <h2 style="display: inline; margin-right: 10px;">Comedy</h2> 
+        <a href="#" class="card-more-link"> more>>>></a>
+        <div class="movies-cards">
+          {% for movie in action_movies %} 
+          <div class="movies-card">
+            <img src={{ movie.poster.url }}>
+            <div class="card-content">
+              <div class="card-row">
+                <div class="card-details">
+                  <span>{{movie.caption}}</span>
+                  <p>Action</p>
+                </div>
+              </div>
+              <div class="card-buttons">
+                <a href="#">Details</a>
+                <a href="#">Play</a>
+              </div>
+            </div>
+          </div>   
+          {% endfor %}                                                
+        </div>          
+        <h2 style="display: inline; margin-right: 10px;">Drama</h2> 
+        <a href="#" class="card-more-link"> more>>>></a>
+        <div class="movies-cards">
+          {% for movie in action_movies %} 
+          <div class="movies-card">
+            <img src={{ movie.poster.url }}>
+            <div class="card-content">
+              <div class="card-row">
+                <div class="card-details">
+                  <span>{{movie.caption}}</span>
+                  <p>Action</p>
+                </div>
+              </div>
+              <div class="card-buttons">
+                <a href="#">Details</a>
+                <a href="#">Play</a>
+              </div>
+            </div>
+          </div>   
+          {% endfor %}                                                
+        </div>         
+        <h2 style="display: inline; margin-right: 10px;">Fantasy</h2> 
+        <a href="#" class="card-more-link"> more>>>></a>
+        <div class="movies-cards">
+          {% for movie in action_movies %} 
+          <div class="movies-card">
+            <img src={{ movie.poster.url }}>
+            <div class="card-content">
+              <div class="card-row">
+                <div class="card-details">
+                  <span>{{movie.caption}}</span>
+                  <p>Action</p>
+                </div>
+              </div>
+              <div class="card-buttons">
+                <a href="#">Details</a>
+                <a href="#">Play</a>
+              </div>
+            </div>
+          </div>   
+          {% endfor %}                                                
+        </div>      
+        <h2 style="display: inline; margin-right: 10px;">Romance</h2> 
+        <a href="#" class="card-more-link"> more>>>></a>
+        <div class="movies-cards">
+          {% for movie in action_movies %} 
+          <div class="movies-card">
+            <img src={{ movie.poster.url }}>
+            <div class="card-content">
+              <div class="card-row">
+                <div class="card-details">
+                  <span>{{movie.caption}}</span>
+                  <p>Action</p>
+                </div>
+              </div>
+              <div class="card-buttons">
+                <a href="#">Details</a>
+                <a href="#">Play</a>
+              </div>
+            </div>
+          </div>   
+          {% endfor %}                                                
+        </div>                
         
       </div>   
     </div>

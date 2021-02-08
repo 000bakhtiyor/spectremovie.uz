@@ -643,16 +643,20 @@ footer > .footer-menu > ul > li {
 
 
 
-
+#movies-cards-container{
+    display: flex;
+    flex-direction: column;
+}
 #movie-div{
     font-family: 'Noto Sans JP', 'sans-serif';
-    padding: 0px 15px 300px 15px;
+    padding: 0px 15px 20px 15px;
     background-color: #eeeeee;
 }
 .movies-cards{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 70px;
 }
 
 .movies-card{
@@ -728,7 +732,6 @@ footer > .footer-menu > ul > li {
     color: white;
     background: #585858;
 }
-
 
 /* AboutUs Page CSS Source  */
 
