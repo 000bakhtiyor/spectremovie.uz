@@ -139,7 +139,6 @@
      margin: 0;
      padding: 0;
 }
-/****** Style Star Rating Widget *****/
  .rating {
      border: none;
      float: left;
@@ -163,16 +162,10 @@
      color: #ddd;
      float: right;
 }
-/***** CSS Magic to Highlight Stars on Hover *****/
  .rating > input:checked ~ label, .rating:not(:checked) > label:hover, .rating:not(:checked) > label:hover ~ label {
-    /* show gold star when clicked */
-    /* hover current star */
      color: #ffd700;
 }
-/* hover previous stars in list */
  .rating > input:checked + label:hover, .rating > input:checked ~ label:hover, .rating > label:hover ~ input:checked ~ label, .rating > input:checked ~ label:hover ~ label {
-    /* hover current star when changing rating */
-    /* lighten current selection */
      color: #ffed85;
 }
  a[data-tooltip] {
@@ -184,14 +177,12 @@
      opacity: 0.85;
 }
  a[data-tooltip]::before {
-    /* * using data-tooltip instead of title so we * don't have the real tooltip overlapping */
      content: attr(data-tooltip);
      background: #000;
      color: #fff;
      font-size: 13px;
      padding: 5px;
      border-radius: 5px;
-    /* we don't want the text to wrap */
      white-space: nowrap;
      text-decoration: none;
 }
@@ -204,8 +195,6 @@
  a[data-tooltip]:hover::before, a[data-tooltip]:hover::after {
      display: block;
 }
-/** positioning **/
-/* top tooltip */
  a[data-tooltip][data-placement="top"]::before {
      bottom: 100%;
      left: 0;
