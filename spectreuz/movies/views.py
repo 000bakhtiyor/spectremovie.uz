@@ -32,5 +32,9 @@ def aboutus(request):
 	return render(request, 'movies/about-us.html')
 
 def topmovies(request):
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 9f1e15a30d4d3493d42176e09fd43a910da79d64
 
     return render(request, 'movies/top-movies.html')
