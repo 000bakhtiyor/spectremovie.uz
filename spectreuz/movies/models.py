@@ -22,7 +22,7 @@ class Movies(models.Model):
     movie = models.CharField(max_length=300) 
     details = models.TextField(blank=True)
     genre = models.CharField(max_length=20, choices=genre_choices, default="1")
-    poster = models.ImageField(upload_to="posters/", default="/media/card.jfif")
+    poster = models.ImageField(upload_to="posters/", default="/card.jfif")
 
 
     class Meta:

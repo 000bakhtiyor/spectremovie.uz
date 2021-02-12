@@ -30,3 +30,8 @@ def treller(request):
 def aboutus(request):
 
 	return render(request, 'movies/about-us.html')
+
+def topmovies(request):
+    
+
+    return render(request, 'movies/top-movies.html')

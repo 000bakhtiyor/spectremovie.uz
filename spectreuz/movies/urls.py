@@ -13,5 +13,5 @@ urlpatterns = [
     path('movies', views.movies, name="movies-page"),
     path('treller', views.treller, name="trellers-page"),
     path('aboutus', views.aboutus, name='about-us'),
-
+    path('topmovies', views.topmovies, name='top-movies')
 ]
